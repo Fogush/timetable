@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" method="upgrade">
+ 
+    <name>Hello World!</name>
+    <!-- Следующие элементы не обязательны и могут содержать все, что вы считаете нужным -->
+    <creationDate>05.05.2012</creationDate>
+    <author>Dev Joomla</author>
+    <authorEmail>info@dev-joomla.ru</authorEmail>
+    <authorUrl>http://www.dev-joomla.ru</authorUrl>
+    <copyright>Copyright Info</copyright>
+    <license>License Info</license>
+    <!-- Версия модуля – эта строка сохраняется в таблице расширений -->
+    <version>0.0.1</version>
+    <!-- Описание модуля также не обязательно и если оно не указано, то берется из тэга  name -->
+    <description>Это описание модуля Hello World...</description>
+    <!-- Обратите внимание на тэг  files: в нем содержится информация, о том какие файлу нужно копировать в каталог модуля -->
+    <files>
+        <filename module="mod_helloworld">mod_helloworld.php</filename>
+        <filename>mod_helloworld.xml</filename>
+    </files>
+</extension>

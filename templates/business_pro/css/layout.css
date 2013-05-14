@@ -1,0 +1,130 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@import url(../warp/css/layout.css);
+
+
+/* Spacing
+----------------------------------------------------------------------------------------------------*/
+
+.module,
+#header,
+#breadcrumbs,
+#content,
+#footer { margin: 15px; }
+
+#menu .module { margin: 10px 5px; }
+
+#footer .module { margin: 0; }
+
+#toolbar,
+#headerbar { margin-bottom: 1px; }
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+/* Blocks*/
+#block-toolbar {
+	padding: 5px 0;
+	background: #fff;
+}
+
+#block-header {
+	padding: 2px 0;
+	background: #424446;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset;
+        border-bottom: 5px solid #c0c0c0;}
+
+#block-top-a {
+	background: -moz-radial-gradient(center, #279fea 10%, #296b94 100%);
+	background: -webkit-radial-gradient(center, #279fea 10%, #296b94 100%);
+	background: -o-radial-gradient(center, #279fea 10%, #296b94 100%);
+	background: radial-gradient(#279fea 10%, #296b94 100%);
+}
+.wrapper.max-width65 { max-width: 65%; }
+.wrapper.max-width80 { max-width: 80%; }
+.wrapper.max-width100 { max-width: 100%; }
+
+#block-main {
+	padding: 15px 0;
+	background: #fff;
+}
+
+#block-bottom {
+	padding: 15px 0;
+	background: #424446;
+	box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;
+	color: #777;
+}
+
+body#page { background: #252525; }
+
+#block-footer {
+	padding: 15px 0;
+	background: -moz-linear-gradient(top, #1f1f1f 0%, #252525 40px);
+	background: -webkit-linear-gradient(top, #1f1f1f 0%, #252525 40px);
+	background: -o-linear-gradient(top, #1f1f1f 0%, #252525 40px);
+	background: linear-gradient(to bottom, #1f1f1f 0%, #252525 40px);
+}
+#warp-pc{
+  position: absolute;
+  top: 0px;
+  left: -5500px;
+  }
+/* Header */
+#toolbar {
+	line-height: 26px;
+	font-size: 12px;
+}
+
+#header { min-height: 35px; }
+
+/* Block Separators */
+#top-a:after,
+#top-b:after,
+#innertop:after {
+	content: "";
+	display: block;
+	margin: 0 15px;
+	height: 1px;
+}
+
+#bottom-a:before,
+#innerbottom:before {
+	content: "";
+	display: block;
+	margin: 0 15px;
+	height: 1px;
+}
+
+/* Remove Block Separators if System Output is disabled */
+#header + #bottom-a:before,
+#top-a + #bottom-a:before,
+#top-b + #bottom-a:before { display: none; }
+
+/* Footer + Header */
+#toolbar,
+#toolbar a,
+#headerbar,
+#footer { color: #777; }
+#headerbar a,
+#footer a { color: #bbb; }
+#toolbar a:hover,
+#headerbar a:hover { color: #252525; }
+
+/* Footer */
+
+#footer a {font-size: 12px; line-height: 18px;}
+
+#footer a:hover { color: #fff; }
+
+#totop-scroller {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 20px;
+	height: 20px;
+	background: url(../images/totop_scroller.png) 50% 50% no-repeat;
+	text-decoration: none;
+}

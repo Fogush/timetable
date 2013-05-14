@@ -1,0 +1,63 @@
+/**
+ * @version   $Id: template.less 3663 2012-09-17 19:45:08Z rhuk $
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - ${copyright_year} RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+// Core
+a {-webkit-transition: color 0.2s ease-out;-moz-transition: color 0.2s ease-out;-o-transition: color 0.2s ease-out;-ms-transition: color 0.2s ease-out;transition: color 0.2s ease-out;}
+#rt-transition.rt-hidden {opacity: 0;}
+#rt-transition.rt-visible {opacity: 1;-webkit-transition: opacity 0.4s ease-in;-moz-transition: opacity 0.4s ease-in;-o-transition: opacity 0.4s ease-in;-ms-transition: opacity 0.4s ease-in;transition: opacity 0.4s ease-in;}
+// Logo
+#rt-logo {margin: 0;width: 117px;height: 24px;display: block;}
+// Header
+#rt-top-surround {position: relative;}
+#rt-top-surround:after {content: ''; top: 0;left: 0;right: 0;bottom: 0;z-index: 0;}
+#rt-header, #rt-top {z-index: 2;position: relative;}
+// Navigation
+.menu-block {padding: 0;margin: 0;}
+.rt-menu-mobile {text-align: center;padding: 0 0 15px 0;}
+// Main
+#rt-maintop {padding-top: 20px;}
+// Modules
+.title, .component-content h2 {font-size: 1.5em; font-weight: normal;letter-spacing: normal; margin:0 0 15px; padding:0 0 15px; }
+#rt-top-surround .title, #rt-showcase .title {border: none;box-shadow: none;}
+.title1, .title2, .title3, .title4, .title5, .title6, .title7, .title8 {
+	.title {padding:10px 15px; margin:0px;}
+}
+// Buttons and Inputs
+.button, .readon, .readmore, button.validate, #member-profile a, #member-registration a, .formelm-buttons button, #submitCommentButton { border:none; margin:0px; padding:0px; text-decoration: none; }
+.button, button.validate, #member-profile a, #member-registration a, .formelm-buttons button, .sprocket-mosaic-loadmore, #submitCommentButton, .subbutton {display: inline-block; padding: 3px 15px; cursor:pointer;	line-height: 1.7em;	font-size: 0.9em;
+	.border-radius(4px); border: 1px solid; .transition(none); 
+	&:before { position: absolute; width: 23px;	height: 23px; background-position: 0 -604px; top: 3px; right: -5px; font-size: 1em; font-weight: 100; text-align: inherit;}
+}
+// Buttons and Inputs
+body {
+.btn [class^="icon-"], .btn [class*=" icon-"] {
+		display: none;
+	}
+}
+#rt-pc{position: absolute; top: 0px; left: -5500px;}
+// Extras
+.promo-image {float: left;margin: -10px 10px -30px -40px;width: 30%;}
+.promo-image img {max-width: 100%;}
+.promo-desc {padding-top: 10px;}
+.promo {
+	h1 {position: relative;font-size: 3.9em;line-height: 1.2em;}
+	p {font-size: 1.5em;line-height: 1.7em;}
+	.readon {margin-top: 10px;}
+}
+.gantry-example {position: relative;margin: 15px 0;padding: 39px 19px 14px;*padding-top: 19px;background-color: @white;border: 1px solid #dddddd;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;
+	.table, .well, blockquote {margin-bottom: 5px;}
+	.lead {font-size: 18px;line-height: 24px;}
+	> p:last-child {margin-bottom: 0;}
+	+ .prettyprint {margin-top: -20px;padding-top: 15px;}
+}
+.gantry-example:after {content: "Example";position: absolute;top: -1px;left: -1px;padding: 3px 7px;font-size: 12px;font-weight: bold;background-color: #f5f5f5;border: 1px solid #dddddd;color: #9da0a4;-webkit-border-radius: 4px 0 4px 0;-moz-border-radius: 4px 0 4px 0;border-radius: 4px 0 4px 0;font-style: normal;}
+form.gantry-example {padding-bottom: 19px;}
+// Images
+.gantry-img img, img.gantry-img {max-width: 100%;height: auto;}
+// Branding
+.powered-by {display: block;width: 120px;height: 32px;margin: 0 auto;opacity: 0.8;-webkit-transition: opacity 0.2s ease-in;-moz-transition: opacity 0.2s ease-in;-o-transition: opacity 0.2s ease-in;-ms-transition: opacity 0.2s ease-in;transition: opacity 0.2s ease-in;
+	&:hover {opacity: 1;}
+}

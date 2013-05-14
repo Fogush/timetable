@@ -1,0 +1,74 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/*
+ * Style Style Sheet - Defines the main look like colors and backgrounds
+ * Not all style related CSS is included, only colors and backgrounds which may change for different theme styles
+ */
+
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+body {
+	font: normal 14px/20px Arial, Helvetica, sans-serif;
+	color: #444;
+}
+
+a { color: #1b1b1b; }
+
+a:hover,
+em, code { color: #294160; }
+
+ins, mark { background-color: #ffa; }
+mark { color: #444; }
+
+hr { border-top-color: #ddd; }
+
+pre {
+	border: 1px solid #ddd;
+	background: #fafafa;
+}
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+#block-top-a {
+	background: -moz-radial-gradient(center, #294160 10%, #19283b 100%);
+	background: -webkit-radial-gradient(center, #294160 10%, #19283b 100%);
+	background: -o-radial-gradient(center, #294160 10%, #19283b 100%);
+	background: radial-gradient(#294160 10%, #19283b 100%);
+}
+.wrapper.max-width65 { max-width: 65%; }
+.wrapper.max-width80 { max-width: 80%; }
+.wrapper.max-width100 { max-width: 100%; }
+
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+/* Sidebar/Accordion Menu
+----------------------------------------------------------------------------------------------------*/
+/* Hover */
+.menu-sidebar a:hover,
+.menu-sidebar li > span:hover { color: #294160; }
+	
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+.mod-color {
+	padding: 15px;
+	border: 1px solid #0d1725;
+        color: #ffffff;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	background: -moz-radial-gradient(center, #294160 10%, #19283b 100%);
+	background: -webkit-radial-gradient(center, #294160 10%, #19283b 100%);
+	background: -o-radial-gradient(center, #294160 10%, #19283b 100%);
+	background: radial-gradient(#294160 10%, #19283b 100%);
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+
+

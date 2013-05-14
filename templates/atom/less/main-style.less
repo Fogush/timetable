@@ -1,0 +1,154 @@
+/**
+* @version   $Id: main-style.less 4002 2012-09-30 23:12:52Z kevin $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+// Core
+body {
+	color: @bodyText;
+	a {color: @main-global; 
+		&:hover {text-decoration:underline;
+		}
+	}
+}
+
+// Logo
+.logo-type-atom #rt-logo {
+	background-image: url(../images/logo/logo.png);
+}
+
+// Error Page
+.rt-error-content{margin-left: 0; margin-top: 125px; text-align: center;
+       .error-title {font-size: 130px;}
+	   .error-content{text-transform:uppercase; font-size:20px;}
+}
+// Module Variations
+.box1::before, .box1::after, .box2::before, .box2::after,.box3::before, .box3::after, .box4::before, .box4::after , .box5::before, .box5::after, .box6::before, .box6::after, .box7::before, .box7::after, .box8::before, .box8::after, .box9::before, .box9::after, .box10::before, .box10::after, .box11::before, .box11::after, .box12::before, .box12::after, .box13::before, .box13::after, .box14::before, .box14::after, .box15::before, .box15::after, .box16::before, .box16::after { display: table; content: ""; }
+.box1::after, .box2::after, .box3::after, .box4::after, .box5::after, .box6::after, .box7::after, .box8::after, .box9::after, .box10::after, .box11::after, .box12::after, .box13::after, .box14::after, .box15::after, .box16::after { clear: both; }
+.title1, .title2, .title3, .title4, .title5, .title7, .title8, .title9, .title10, .title11, .title12, .title13, .title14, .title15, .title16, .box1, .box2, .box3, .box4, .box5, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16{
+         h2.title:after{background:none !important; border:none !important;}
+}
+.box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16{
+         &.rt-block{margin:15px 25px;}
+		 .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14, .box15, .box16 { border:none; }
+}
+.box4, box10, box12 {
+	a{color:@white !important;
+	&:hover{color:@white !important;}
+	}
+}
+.box1 {
+	background:white;
+	border: 1px solid @bodyborder;
+	input[type="text"], input[type="password"] {
+		border: 1px solid @bodyborder;
+	}
+}
+.box2 {
+	#gradient > .vertical-three-colors(lighten(@listsButtons,5%), @listsButtons, 75%, @listsButtons);
+	border: 1px solid @bodyborder;
+	.box-shadow(0 2px 3px rgba(0,0,0,0.1));
+	h2.title{border-bottom:1px solid @bodyborder2;}
+}
+.box3 {
+	box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.6);
+	#gradient > .vertical-three-colors(lighten(@btnHover,10%), @btnHover, 75%, @btnHover);
+	h2.title{border-bottom:1px solid @bodyborder4;}
+}
+.box4 {
+	#gradient > .vertical-three-colors(lighten(@main-global,15%), @main-global, 75%, @main-global);
+	border: 1px solid @main-global;
+	color:@white;
+}
+.box5 {
+	border: 1px solid @bodyborder;
+	h2.title{#gradient > .vertical-three-colors(lighten(@listsButtons,5%), @listsButtons, 75%, @listsButtons); border-bottom:1px solid @bodyborder; padding:10px 15px !important; margin:0px !important;}
+	&.rt-block{margin:15px 25px; padding:0px;}
+	.module-content{padding:15px;}
+}
+.box6 {
+	border: 1px solid @bodyborder;
+	border-bottom: 2px solid @main-global;
+}
+.box7 {
+    background:url(../images/module-variation/img01.png) repeat;
+	border: 1px solid @bodyborder;
+	h2.title{border-bottom: 1px solid @bodyborder2;}
+}
+.box8 {
+	 background:url(../images/module-variation/img02.png) repeat;
+	border: 1px solid @bodyborder;
+	h2.title{border-bottom: 1px solid @bodyborder4;}
+}
+.box9 { 
+    background:url(../images/module-variation/img03.png) repeat;
+	border: 1px solid @bodyborder;
+	h2.title{border-bottom: 1px solid @bodyborder4;}
+}
+.box10 {
+	background:url(../images/module-variation/img04.png) repeat;
+	border: 1px solid @bodyborder;
+	h2.title{border-bottom: 1px solid @bodycontrast;}
+	color:@white;
+}
+.box11 {
+	background:url(../images/module-variation/img05.png) repeat;
+	border: 1px solid @bodyborder;
+	h2.title{border-bottom: 1px solid @bodyborder2;}
+}
+.box12 {
+	background:url(../images/module-variation/img06.png) repeat;
+	border: 1px solid @bodyborder;
+	h2.title{border-bottom: 1px solid @bodycontrast;}
+	color:@white;
+}
+.box13 {
+	background:url(../images/module-variation/img07.png) repeat;
+	border: 1px solid @bodyborder;
+	h2.title{border-bottom: 1px solid @bodyborder4;}
+}
+.box14 {
+	background:url(../images/module-variation/img08.png) repeat;
+	border: 1px solid @bodyborder;
+	h2.title{border-bottom: 1px solid @bodyborder;}
+}
+.box15 {
+	background:url(../images/module-variation/img09.png) repeat;
+	border: 1px solid @bodyborder;
+	h2.title{border-bottom: 1px solid @bodyborder4;}
+}
+.box16 {
+	background:url(../images/module-variation/img10.png) repeat;
+	border: 1px solid @bodyborder;
+	h2.title{border-bottom: 1px solid @bodyborder2;}
+}
+/* Default */
+.button, button, input[type="button"], input[type="submit"], button.validate, #member-profile a, #member-registration a, .formelm-buttons button, .sprocket-mosaic-loadmore, #gantry-totop, body .btn-primary {
+	color: @white;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+	border: 1px solid darken(@main-global, 5%);
+	position: relative;
+	text-shadow: none;
+	#gradient > .vertical-three-colors(lighten(@main-global,5%), @main-global, 45%, @main-global);
+	&:hover { 
+		color: @white;
+		border: 1px solid darken(@btnHover,5%);
+		#gradient > .vertical-three-colors(lighten(@btnHover,5%), @btnHover, 45%, @btnHover);
+	}
+	&:active {
+		box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.6);
+		border: 1px solid darken(@btnHover,8%);
+		#gradient > .vertical-three-colors(lighten(@btnHover,5%), @btnHover, 45%, @btnHover);
+	}
+}
+.button, button, input[type="button"], input[type="submit"], button.validate,  .formelm-buttons button, .btn-primary, #submitCommentButton { -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s;
+	&:hover { -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s;
+		color: @white;
+	}
+	&:active {
+	}
+}
+.readon, .readmore a, a.readmore, #member-profile a, #member-registration a {margin:10px 0; display: inline-block; border: 0; cursor: pointer; zoom: 1; outline: none; text-align: center; text-decoration: none; vertical-align: middle;
+   &:after{content:"\f067"; font-family:'FontAwesome'; font-weight:normal; margin:0 0 0 5px; font-size: 0.6em;}
+}

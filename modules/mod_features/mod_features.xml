@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>Feature Module</name>
+	<author>RevivalPixel</author>
+	<creationDate>August 2011</creationDate>
+	<copyright>Copyright (C) 2012 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>revivalpixel@gmail.com</authorEmail>
+	<authorUrl>www.revivalpixel.com</authorUrl>
+	<version>1.0.0</version>
+	<description>This module adds an feature module, composed in a title, icon and a description.</description>
+	<files>
+		<filename module="mod_features">mod_features.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_features.xml</filename>
+	</files>
+
+	<help key="Module Top" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="title" default="" type="text" label="Title" description="The module's title which will appear." />
+				<field name="icon" type="media" directory="icons" label="Icon" description="The icon which will appear in the module." />
+				<field name="description" default="" type="textarea" rows="8" cols="25" label="Description"/>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

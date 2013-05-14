@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension method="upgrade" type="module" version="2.5.0">
+	<name>jTweet</name>
+	<author>Joomla Bamboo</author>
+	<creationDate>October 30, 2012</creationDate>
+	<copyright>Copyright (c) 2012 Joomla Bamboo. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>design@joomlabamboo.com</authorEmail>
+	<authorUrl>www.joomlabamboo.com</authorUrl>
+	<version>2.0.5</version>
+	<description>jTweets is a port of the Sea of Clouds jQuery script called Tweet.</description>
+	<files>
+		<filename module="mod_jTweet">mod_jTweet.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>fields</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_jTweet.ini</language>
+		<language tag="es-ES">language/es-ES.mod_jTweet.ini</language>
+	</languages>
+	<config>
+		<fields addpath="/modules/mod_jTweet/fields" name="params">
+			<fieldset addfieldpath="/modules/mod_jTweet/fields" label="MOD_JTWEET_SETTINGS" name="settings">
+				<field name="scripts" type="scripts" />
+				<field default="tweets" description="TWEET_SOURCE_DESC" label="TWEET_SOURCE" name="source" type="list">
+					<option value="tweets">User tweets</option>
+					<option value="query">Twitter search</option>
+				</field>
+				<field cols="20" default="joomlabamboo" description="TWITTER_USERNAMES_DESC" label="TWITTER_USERNAMES" name="username" type="textarea"/>
+				<field cols="20" default="joomla" description="TWITTER_QUERY_DESC" label="TWITTER_QUERY" name="query" type="textarea"/>
+				<field default="TWITTER_LIST_DESC" panel="twitterlist" type="description"/>
+				<field cols="20" default="" description="TWITTER_LIST_DESC" label="TWITTER_LIST_NAME" name="tweetList" type="textarea"/>
+				<field default="TWEET_THEME" type="header"/>
+				<field default="TWEET_THEME_DESC" type="description"/>
+				<field default="1" description="TWEET_THEME_DESC" label="TWEET_THEME" name="theme" type="list">
+					<option value="none">None</option>
+					<option value="bubble">Bubble</option>
+					<option value="shadow">Shadow</option>
+				</field>
+				<field default="TWEET_LAYOUT" type="header"/>
+				<field default="TWEET_LAYOUT_DESC" type="description"/>
+				<field default="1" description="TWEET_LAYOUT_DESC" label="TWEET_LAYOUT" name="tweetLayout" type="list">
+					<option value="1">Default</option>
+					<option value="pagination">Pagination</option>
+					<option value="scroller">Scroller</option>
+				</field>
+				<field default="HEIGHT_DESC" panel="moduleheight" type="description"/>
+				<field default="60px" description="HEIGHT_DESC" label="HEIGHT" name="height" type="text"/>
+				<field default="TWEET_COUNT" type="header"/>
+				<field default="TWEET_COUNT_DESC" type="description"/>
+				<field default="5" description="TWEET_COUNT_DESC" label="TWEET_COUNT" name="count" type="text"/>
+				<field default="REFRESH_TIME" type="header"/>
+				<field default="REFRESH_TIME_DESC" type="description"/>
+				<field default="0" description="REFRESH_TIME_DESC" label="REFRESH_TIME_LABEL" name="refreshTime" type="text"/>
+				<field default="TWEET_TEMPLATE" type="header"/>
+				<field default="TWEET_TEMPLATE_DESC" type="description"/>
+				<field name="sortable" type="sortable"/>
+				<field default="{avatar},{text},{break},{time},{source}" description="Select between content items or a folder containing images." label="Used Items" name="useditems" type="text"/>
+				<field default="" description="Select between content items or a folder containing images." label="Unused Items" name="unuseditems" type="text"/>
+				<field default="COLUMNS_WIDTHS_TITLE" name="Column Widths" title="Columns" type="header"/>
+				<field default="COLUMN_WIDTHS_DESC" panel="Columns" type="description"/>
+				<field default="10" description="COLUMN_WIDTHS_DESC" label="COLUMN1_WIDTH" name="col1Width" type="text"/>
+				<field default="60" description="COLUMN_WIDTHS_DESC" label="COLUMN2_WIDTH" name="col2Width" type="text"/>
+				<field default="10" description="COLUMN_WIDTHS_DESC" label="COLUMN3_WIDTH" name="col3Width" type="text"/>
+				<field default="TWEET_FILTER" type="header"/>
+				<field default="TWEET_FILTER_DESC" type="description"/>
+				<field default="0" description="FAVOURITE_TWEETS_DESC" label="FAVOURITE_TWEETS" name="favourite" type="list">
+					<option value="1">MOD_JTWEET_YES</option>
+					<option value="0">MOD_JTWEET_NO</option>
+				</field>
+				<field default="1" description="DISPLAY_RETWEETS_DESC" label="DISPLAY_RETWEETS" name="retweet" type="list">
+					<option value="1">MOD_JTWEET_YES</option>
+					<option value="0">MOD_JTWEET_NO</option>
+				</field>
+				<field default="0" description="DISPLAY_REPLIES_DESC" label="DISPLAY_REPLIES" name="suppressreply" type="list">
+					<option value="1">MOD_JTWEET_YES</option>
+					<option value="0">MOD_JTWEET_NO</option>
+				</field>
+				<field default="AVATARTITLE" title="Avatar" type="header"/>
+				<field default="AVATAR_DESC" panel="avatardescription" type="description"/>
+				<field default="48" description="The size of your twitter avatar" label="Avatar Size" name="avatarSize" type="text"/>
+				<field default="LINK_BEHAVIOUR" type="header"/>
+				<field default="LINK_BEHAVIOUR_DESCRIPTION" type="description"/>
+				<field default="1" description="OPEN_IN_NEW_WINDOW_DESC" label="OPEN_IN_NEW_WINDOW" name="targetBlank" type="list">
+					<option value="1">MOD_JTWEET_YES</option>
+					<option value="0">MOD_JTWEET_NO</option>
+				</field>
+				<field default="LOADING_TEXT" type="header"/>
+				<field default="LOADING_TEXT_DESC" type="description"/>
+				<field default="Loading tweets ..." description="LOADING_TEXT_DESC" label="Loading Text" name="loadingText" type="text"/>
+				<field default="FOLLOW_LINK" type="header"/>
+				<field default="FOLLOW_LINK_DESCRIPTION" type="description"/>
+				<field default="1" description="FOLLOW_LINK_DESCRIPTION" label="DISPLAY_FOLLOW_TEXT" name="follow" type="list">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field default="Follow me on Twitter" description="FOLLOW_TEXT_DESC" label="FOLLOW_TEXT" name="followText" type="text"/>
+				<field default="TWITTER_ICON" title="icondescription" type="header"/>
+				<field default="TWITTER_ICON_DESCRIPTION" panel="icondescription" type="description"/>
+				<field default="bird1" description="TWITTER_ICON_DESC" label="TWITTER_ICON" name="twitterBird" type="list">
+					<option value="bird1">Bird1</option>
+					<option value="bird2">Bird2</option>
+					<option value="bird3">Bird3</option>
+					<option value="bird4">Bird4</option>
+					<option value="bird5">Bird5</option>
+					<option value="none">No Icon</option>
+				</field>
+			</fieldset>
+			<fieldset label="MOD_JTWEET_GENERAL_SETTINGS" name="general">
+				<field default="0" description="MOD_JTWEET_CACHING_DESC" label="MOD_JTWEET_CACHING" name="cache" type="list">
+					<option value="1">MOD_JTWEET_USE_GLOBAL</option>
+					<option value="0">MOD_JTWEET_NO_CACHING</option>
+				</field>
+				<field default="900" description="MOD_JTWEET_CASHE_TIME_DESC" label="MOD_JTWEET_CASHE_TIME" name="cache_time" type="text"/>
+				<field default="" description="PARAMMODULECLASSSUFFIX" label="MOD_JTWEET_CLASS_SUFFIX" name="moduleclass_sfx" type="text"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

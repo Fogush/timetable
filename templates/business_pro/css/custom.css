@@ -1,0 +1,12 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/*
+ * Custom Style Sheet - Use this file to style your content
+ */
+
+.custom-logo {
+	width: 310px;
+	height: 90px;
+	background: url(../../../images/Demo/logo.png) 50% 50% no-repeat;
+	background-size: contain;
+}

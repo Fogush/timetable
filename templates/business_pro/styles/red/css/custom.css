@@ -1,0 +1,123 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/*
+ * Custom Style Sheet - Use this file to style your content
+ */
+
+.custom-logo {
+	width: 310px;
+	height: 90px;
+	background: url(../../../../../images/Demo/logo_red.png) 50% 50% no-repeat;
+	background-size: contain;
+}
+
+/* Mosaic - Content */
+.sprocket-mosaic-container {margin: 0;padding: 0;list-style: none;}
+.sprocket-mosaic-container li {display: inline-block; }
+.sprocket-readmore {display:none; }
+.sprocket-readmore:hover {opacity: 1;background-position: 0 -99px;}
+
+/* Mosaic - Item */
+.sprocket-mosaic-item {
+	border: 1px solid #dddddd;
+        border-radius: 0;
+        color: #383838;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	background: #fff;
+}
+
+.sprocket-mosaic-item:hover {
+        border-radius: 0;
+        color: #383838;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+        background-image: url(../images/quote.jpg);
+}
+
+.sprocket-mosaic .sprocket-mosaic-tags, #main .sprocket-mosaic ul.sprocket-mosaic-tags {margin: 10px -10px -10px; padding: 5px;background: none;border-radius: 0;font-size: 90%;font-weight: bold;}
+/*.sprocket-mosaic .sprocket-mosaic-tags li, #main .sprocket-mosaic ul.sprocket-mosaic-tags li {width: auto;margin-right: 1px;padding: 0 5px;background: #fff;border: 1px solid #ddd;border-radius: 0}*/
+.sprocket-mosaic .sprocket-mosaic-tags li, #main .sprocket-mosaic ul.sprocket-mosaic-tags li {width: auto;margin-right: 1px;padding: 0 5px;background: none;border-radius: 0;border: 1px solid #ddd;}
+
+
+.sprocket-mosaic .sprocket-mosaic-order li {float: right; margin-left: 5px; margin-bottom: 5px; color: #ffffff; border: none; border-radius: 0; background: #424446;}
+
+.sprocket-mosaic .sprocket-mosaic-filter li {float: left; margin-right: 5px; margin-bottom: 5px; color: #ffffff; border: none; border-radius: 0; background: #424446;}
+
+.sprocket-mosaic-hovercontent { width: 100%; height: 100%; background: rgba(66,68,70,0.8) url(../images/eye.png) 50% 50% no-repeat; }
+
+.sprocket-mosaic-container li:hover {
+         box-shadow: 0 0 5px #888888;
+    }
+
+.active .sprocket-lists-title {color: #fff;background: #424446;}
+.sprocket-lists-title:hover {color: #fff;background: #424446;}
+.sprocket-lists-item {background-image: url(../images/quote.jpg);}
+
+/*  
+blockquotes  
+ */ 
+ 
+blockquote {
+background-image: url(../images/quote.jpg);
+padding: 20px 10px;
+  font: 15px normal helvetica, sans-serif;
+  font-style:italic;
+  color: #383838;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-left: 15px;
+  border-left: 8px solid #383838;
+} 
+ 
+blockquote:hover {
+background-image: url(../images/quote.jpg);
+padding: 20px 10px;
+  font: 15px normal helvetica, sans-serif;
+  font-style:italic;
+  color: #383838;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-left: 15px;
+  border-left: 8px solid #980001;
+}
+
+/* Buttons (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+/* Primary */
+.button-primary {
+	padding: 3px 10px;
+	background: #980001;
+	color: #FFF;
+}
+
+.button-primary:hover {
+	color: #FFF;
+	background: #424446;
+}
+
+/* Forms (Needed for System Markup)
+----------------------------------------------------------------------------------------------------*/
+form.box fieldset { border: 1px solid #ddd; }
+form.box legend { background: #fff; }
+
+form.style input[type="button"],  
+form.style input[type="submit"],  
+form.style button  {
+border: none;
+        padding: 3px 10px;
+        height: 40px;
+	background: #980001;
+        text-transform:uppercase;
+	color: #FFF;
+
+}
+
+form.style input[type="button"],  
+form.style input[type="submit"],   
+form.style button:hover {
+       height: 40px;
+       text-transform:uppercase;
+       color: #FFF;
+       background: #383838;
+}

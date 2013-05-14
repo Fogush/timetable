@@ -1,0 +1,74 @@
+/* @override
+	http://localhost:8888/dev/intrepid/modules/mod_jTweet/css/admin/admin.css
+	http://localhost:8888/25/avanti/modules/mod_jTweet/css/admin/admin.css
+*/
+
+/**
+ * @package		jTweet
+ * @subpackage	jTweet
+ * @author		Joomla Bamboo - design@joomlabamboo.com
+ * @copyright 	Copyright (c) 2012 Joomla Bamboo. All rights reserved.
+ * @license		GNU General Public License version 2 or later
+ * @version		2.0.5
+ */
+
+#items {
+position: relative;width:90%;margin-top: 30px;padding-bottom: 200px;
+}
+#items ul{ list-style-type: none; margin: 0 0 30px; padding: 0;background: #fafafa;margin-top: 8px;border: 1px solid #ddd;margin-bottom:30px;width:100%; }
+
+#items li { margin: 0 3px 3px 3px; padding: 4px;  font-size: 1.2em; height: 18px; background: #fff url(../../images/admin/gradient.png) repeat-x left bottom;border-radius:3px;border:1px solid #ddd;list-style-type:none;	cursor: move;text-align: center}
+
+
+#items li.ui-state-highlight,#sortable2 li.ui-state-highlight {
+background: #FCFBDD;}
+
+ul#sortable2 {background: none;border: 0;
+position: absolute;width: 100%;right: 0;left: 0px;
+}
+
+ul#sortable2 li {border-radius:3px;
+width: 60px;background: #eee;float: left;color: #333;font-size: 90%;height: 12px;display: inline;margin: 0 10px 10px 0;padding-left: 0px;text-align: center;
+}
+
+#items li.disabled {
+	border: 0;background: 0;font-size: 110%;font-weight: bold;display: block;width: 100%;margin-bottom: 10px;
+}
+
+
+
+.pane-sliders .panel h3 {
+padding: 10px;background: #f5f5f5 url(../../images/admin/gradient.png) repeat-x left bottom!important;margin: 0;border-bottom: 1px solid #D6DADD;border-top: 1px solid #D6DADD
+}
+
+
+
+.pane-sliders .panel   { border-width: 0 1px !important; margin-bottom: 0 !important;
+padding: 0px}
+
+#menu-pane td,.zentools td {
+background: #fff !important;padding: 4px 0 4px 20px !important;border: 0 !important;text-align: left;
+}
+
+table.paramlist td.paramlist_description {
+	background:none !important;
+
+}
+label#paramslayout-lbl,label#paramsitemorder-lbl,input#paramsitemorder,label#paramsitems-lbl,label#paramsuseditems-lbl,#paramsuseditems,label#paramsunuseditems-lbl,#paramsunuseditems,
+label#paramsitems-lbl,label#paramssortable-lbl,#jform_params_useditems,#jform_params_useditems-lbl,#jform_params_unuseditems,#jform_params_unuseditems-lbl,label#jform_params_sortable-lbl,#jform_params_scripts-lbl,#jform_params_Column_Widths-lbl {
+display: none;
+}
+
+.description {
+	background: #E6EFC2;
+	color: #264409;
+	border: 1px solid #C6D880;	padding: 10px;
+	margin-top: 0;width: 90%;clear: both;
+}
+
+.notice{background:#FFF6BF;color:#514721;border:1px solid #FFD324; padding: 10px;width: 90%;}
+
+
+h2 {
+margin-bottom: 0;margin-top: 40px;clear: both;float: left;width: 100%;clip: b;
+}

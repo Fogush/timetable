@@ -1,0 +1,32 @@
+#timetable .bld {
+    font-weight: bold;
+}
+
+#timetable #get-timetable-box {
+    padding-top: 10px;
+}
+#timetable #get-timetable-label {
+    padding-bottom: 2px;
+}
+#timetable #help-box {
+	list-style-type: none;
+	width: 430px;
+	padding: 5px 0 0 0px;
+	margin: 0;
+	display: none;
+}
+#timetable #help-box li {
+	padding: 1px 0;
+}
+
+#timetable #timetable-indent {
+    padding-bottom: 20px;
+}
+
+#timetable #ajax-loader {
+  background: url("../images/ajax-loader.gif") no-repeat center;
+  margin-left: 20px;
+  width: 16px;
+  height: 15px;
+  display: none;      
+}

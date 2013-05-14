@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0.0" method="upgrade">
+ 
+    <name>Timetable</name>
+    <creationDate>May 2013</creationDate>
+    <author>Fogus</author>
+    <version>0.0.1</version>
+    <description>Модуль для вывода расписания (Асер)</description>
+    <files>
+        <filename module="mod_timetable">mod_timetable.php</filename>
+        <filename>mod_timetable.xml</filename>
+        <folder>timetable</folder>
+    </files>
+</extension>

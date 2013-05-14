@@ -1,0 +1,296 @@
+/**
+ * @package   Gantry Template - RocketTheme
+ * @version   4.0.5 September 18, 2012
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2009 - 2012 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+/*
+------------------------------------------------------------------------------
+COMMON STRUCTURE CSS
+-------------------------------------------------------------------------------
+*/
+body{font:13px/1.7em Helvetica, Arial, Sans-Serif !important; color:@globalText; background:@white;}
+/*Custom Font*/
+@font-face {
+    font-family: 'open_sans_lightregular';
+    src: url('../fonts/opensans-light_1-webfont.eot');
+    src: url('../fonts/opensans-light_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-light_1-webfont.woff') format('woff'),
+         url('../fonts/opensans-light_1-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-light_1-webfont.svg#open_sans_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontawesome-webfont.woff') format('woff'),
+         url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('../fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'itc_officina_serifbold';
+    src: url('../fonts/officinaserif-bold-webfont.eot');
+    src: url('../fonts/officinaserif-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/officinaserif-bold-webfont.woff') format('woff'),
+         url('../fonts/officinaserif-bold-webfont.ttf') format('truetype'),
+         url('../fonts/officinaserif-bold-webfont.svg#itc_officina_serifbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'swis721_cn_btbold';
+    src: url('../fonts/swisscb_0-webfont.eot');
+    src: url('../fonts/swisscb_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/swisscb_0-webfont.woff') format('woff'),
+         url('../fonts/swisscb_0-webfont.ttf') format('truetype'),
+         url('../fonts/swisscb_0-webfont.svg#swis721_cn_btbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'swis721_cn_btroman';
+    src: url('../fonts/swissc_0-webfont.eot');
+    src: url('../fonts/swissc_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/swissc_0-webfont.woff') format('woff'),
+         url('../fonts/swissc_0-webfont.ttf') format('truetype'),
+         url('../fonts/swissc_0-webfont.svg#swis721_cn_btroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Font Style*/
+h1, h2, h3, legend{font-family: 'open_sans_lightregular', sans-serif; }
+h4, h5, h6, .gf-menu, .sprocket-mosaic-header, .sprocket-tabs > ul.sprocket-tabs-nav, .sprocket-lists > h4.sprocket-lists-title, .sprocket-mosaic-loadmore, label, .pricing_table .price .price_figure, .pricing_table h3, .btn, button, .componentheading, .k2ProfileHeading, .rp-button-default, .rp-button-create, #advanced-search-toggle{ font-family:'swis721_cn_btbold', Arial, Helvetica, sans-serif; }
+.readon, .readmore a, a.readmore, #member-profile a, #member-registration a, #rt-breadcrumbs, .page-sub-heading, input[type="text"], #xmap, .pricing_table h3.description, .pricing_table .features, .items-more, .component-content .login + div ul li a { font-family:'swis721_cn_btroman', Arial, Helvetica, sans-serif; }
+
+/*Sitemap*/
+div#xmap{
+    h1{margin:0 0 15px;}
+    h2.menutitle { display:none;}
+}
+
+// Lists
+ul, ol {
+  padding: 0;
+  margin: 0 0 @baseLineHeight / 2 15px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+li {
+  line-height: @baseLineHeight;
+}
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+dl {
+  margin-bottom: @baseLineHeight;
+}
+dt,
+dd {
+  line-height: @baseLineHeight;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: @baseLineHeight / 2;
+}
+// Horizontal layout (like forms)
+.dl-horizontal {
+  dt {
+    float: left;
+    width: 120px;
+    clear: left;
+    text-align: right;
+    .text-overflow();
+  }
+  dd {
+    margin-left: 130px;
+  }
+}
+form {
+  margin: 0 0 @baseLineHeight;
+}
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: @baseLineHeight;
+  font-size: @baseFontSize * 1.5;
+  line-height: @baseLineHeight * 2;
+  color: @bodytitle;
+  border: 0;
+  border-bottom: 1px solid @bodyborder;
+  small {
+    font-size: @baseLineHeight * .75;
+    color: @bodyborder;
+  }
+}
+label,
+input,
+button,
+select,
+textarea {
+  #font > .shorthand(@baseFontSize,normal,@baseLineHeight);
+}
+input,
+button,
+select,
+textarea {
+  font-family: @baseFontFamily;
+}
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  display: inline-block;
+  height: @baseLineHeight;
+  padding: 4px 6px;
+  font-size: @baseFontSize;
+  line-height: @baseLineHeight;
+  color: @bodytext;
+}
+input,
+textarea {
+  width: 210px;
+}
+textarea {
+  height: auto;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  background-color: @bodycontrast;
+  border: 1px solid @bodyborder;
+  @transition: border linear .2s, box-shadow linear .2s;
+  .transition(@transition);
+  &:focus {
+    background:@bodybackground;
+    outline: 0;
+    outline: thin dotted \9;
+    .box-shadow(~"0 0 2px rgba(0,0,0,.075), 0 0 2px rgba(0,0,0,.075)");
+  }
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+  cursor: pointer;
+  display: inline;
+}
+input[type="file"],
+input[type="image"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+select,
+input[type="file"] {
+  height: 30px;
+  *margin-top: 4px;
+  line-height: 30px;
+}
+select {
+  width: 220px;
+  border: 1px solid @bodyborder;
+}
+select[multiple],
+select[size] {
+  height: auto;
+}
+select:focus,
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  .tab-focus();
+}
+/*
+------------------------------------------------------------------------------
+BUTTON AND INPUTS 
+-------------------------------------------------------------------------------
+*/
+.login-fields #username, .login-fields #password, #contact-form dd input, #contact-form dd textarea, #modlgn-username, #modlgn-passwd, #jform_email, #member-registration dd input, #search-searchword, .finder .inputbox, .inputbox {border: 1px solid @bodyborder;}
+/*
+------------------------------------------------------------------------------
+MEMBER ACCESS
+-------------------------------------------------------------------------------
+*/
+/*Advance Search*/
+#advanced-search-toggle{ display: inline-block; line-height: 1.8; border: 0; cursor: pointer; zoom: 1; outline: none; text-align: center; text-decoration: none; vertical-align: middle; font-weight:bold; padding:4px 15px; margin:0 5px 5px 0; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s; background:#f0f0f0;}
+#advanced-search-toggle:hover{background:@main-global; color: @white; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s;
+-o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s;}
+/*
+------------------------------------------------------------------------------
+MEDIA QUERIES
+-------------------------------------------------------------------------------
+*/
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+} 
+@media (min-width: 768px) and (max-width: 959px) {
+}
+@media only screen and (max-width: 768px) {
+/*Header position*/
+#rt-header .rt-grid-3{display:none !important;}
+#rt-feature .rt-grid-4{background:none;}
+}
+@media (max-width: 767px) {
+}
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+}
+@media only screen and (max-width: 480px) {
+}
+@media only screen and (max-width: 480px) {
+#rt-header .rt-grid-3{display:none !important;}
+}
+.component-content .login + div ul li a, #login-form a, .component-content .items-more ol li a {
+	background-image: url(../images/main/arrow.png);
+}

@@ -1,0 +1,29 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+
+    body { -webkit-font-smoothing: antialiased; }
+
+
+    /* Teres Zoom Out */
+    .pro-zoomout {
+        -moz-transition: opacity 0.2s easeInOutCubic;
+        -webkit-transition: opacity 0.2s easeInOutCubic;
+        -o-transition: opacity 0.2s easeInOutCubict;
+        -ms-transition: opacity 0.2s easeInOutCubic;
+        -transition: opacity 0.2s easeInOutCubic;
+        opacity: 0.6;
+    }
+    .pro-zoomout:hover {
+         opacity: 1.1;
+        -moz-transform: scale(0.9);
+        -moz-transition: -moz-transform 0.75s easeInOutCubic 0s;
+        -webkit-transform: scale(0.9);
+        -webkit-transition: -moz-transform 0.75s easeInOutCubic 0s;
+        -o-transform: scale(0.9);
+        -o-transition: -moz-transform 0.75s easeInOutCubic 0s;
+        -ms-transform: scale(0.9);
+        -ms-transition: -moz-transform 0.75s easeInOutCubict 0s;
+        transform: scale(0.9);
+        transition: -moz-transform 0.75s easeInOutCubic 0s;
+
+    }

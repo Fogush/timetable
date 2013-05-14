@@ -1,0 +1,82 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@import url(../warp/css/modules.css);
+
+
+/* Module Badges
+----------------------------------------------------------------------------------------------------*/
+
+.module .badge {
+        margin-top:-12px;
+        margin-right:-12px;
+	width: 50px;
+	height: 45px;
+        background: url(../images/module_badges.png) 0 0 no-repeat;
+}
+ 
+.module .badge-hot { background-position: 0 0; }
+.module .badge-top { background-position: 0 -50px; }
+.module .badge-free { background-position: 0 -100px; }
+.module .badge-new { background-position: 0 -150px; }
+
+
+/* Module Icons
+----------------------------------------------------------------------------------------------------*/
+
+.module .module-title .icon { background: url(../images/module_icons.png) 0 0 no-repeat; }
+
+.module .module-title .icon-comment { background-position: 0 0; }
+.module .module-title .icon-bookmark { background-position: 0 -30px; }
+.module .module-title .icon-contact { background-position: 0 -60px; }
+.module .module-title .icon-star { background-position: 0 -90px; }
+.module .module-title .icon-special { background-position: 0 -120px; }
+.module .module-title .icon-crown { background-position: 0 -150px; }
+
+
+/* Module Type: Box
+----------------------------------------------------------------------------------------------------*/
+
+.mod-box {
+	padding: 15px;
+	border: 1px solid #ddd;
+        background: #fff
+}
+
+.mod-box .badge { top: 10px; right: 10px; }
+
+/* Module Type: Full
+----------------------------------------------------------------------------------------------------*/
+
+.mod-full {
+        margin:0;
+
+}
+
+/* Module Type: Dark
+----------------------------------------------------------------------------------------------------*/
+
+.mod-dark {
+	padding: 15px;
+	border: 1px solid #383838;
+        color: #ffffff;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+        background: #424446
+}
+
+.mod-dark .badge { top: 10px; right: 10px; }
+
+/* Module Type: Color
+----------------------------------------------------------------------------------------------------*/
+
+.mod-color {
+	padding: 15px;
+	border: 1px solid #0c5c8e;
+        color: #ffffff;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	background: -moz-radial-gradient(center, #279fea 10%, #296b94 100%);
+	background: -webkit-radial-gradient(center, #279fea 10%, #296b94 100%);
+	background: -o-radial-gradient(center, #279fea 10%, #296b94 100%);
+	background: radial-gradient(#279fea 10%, #296b94 100%);
+}
+
+.mod-color .badge { top: 10px; right: 10px; }

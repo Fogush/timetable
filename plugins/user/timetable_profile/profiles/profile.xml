@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+    <fields name="timetable_profile">
+        <fieldset name="timetable_profile"
+                  label="PLG_USER_TIMETABLE_PROFILE_SLIDER_LABEL"
+            >
+            <field
+                name="country"
+                type="text"
+                id="country"
+                description="PLG_USER_TIMETABLE_PROFILE_FIELD_COUNTRY_DESC"
+                filter="string"
+                label="PLG_USER_TIMETABLE_PROFILE_FIELD_COUNTRY_LABEL"
+                size="30"
+                />
+
+            <field
+                name="city"
+                type="text"
+                id="city"
+                description="PLG_USER_TIMETABLE_PROFILE_FIELD_CITY_DESC"
+                filter="string"
+                label="PLG_USER_TIMETABLE_PROFILE_FIELD_CITY_LABEL"
+                size="30"
+                />
+
+            <field
+                name="institution"
+                type="text"
+                id="institution"
+                description="PLG_USER_TIMETABLE_PROFILE_FIELD_INSTITUTION_DESC"
+                filter="string"
+                label="PLG_USER_TIMETABLE_PROFILE_FIELD_INSTITUTION_LABEL"
+                size="30"
+                />
+
+            <field
+                name="group"
+                type="text"
+                id="group"
+                description="PLG_USER_TIMETABLE_PROFILE_FIELD_GROUP_DESC"
+                filter="string"
+                label="PLG_USER_TIMETABLE_PROFILE_FIELD_GROUP_LABEL"
+                size="30"
+                />
+
+            <field
+                name="subgroup"
+                type="text"
+                id="subgroup"
+                description="PLG_USER_TIMETABLE_PROFILE_FIELD_SUBGROUP_DESC"
+                label="PLG_USER_TIMETABLE_PROFILE_FIELD_SUBGROUP_LABEL"
+                size="1"
+                />
+
+            <field
+                name="group_role"
+                type="list"
+                id="group_role"
+                description="PLG_USER_TIMETABLE_PROFILE_FIELD_GROUP_ROLE_DESC"
+                label="PLG_USER_TIMETABLE_PROFILE_FIELD_GROUP_ROLE_LABEL"
+                >
+                <option value="10">PLG_USER_TIMETABLE_PROFILE_CAPTAIN</option>
+                <option value="11">PLG_USER_TIMETABLE_PROFILE_MEMBER</option>
+            </field>
+
+        </fieldset>
+    </fields>
+</form>

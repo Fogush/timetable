@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+------------------------------------------------------------------------------
+Parallex Slider
+-------------------------------------------------------------------------------
+*/
+div#da-slider{border:none;
+       .da-slide{
+	        .da-img, h2, p{left:0px;}
+	        img{max-width:100%;}
+            h2{font:3em 'itc_officina_serifbold', Georgia, 'Times New Roman', Times, serif; border:none; text-shadow:none; color:@white; text-transform:uppercase; }
+            h2::after{background:none;}
+			p{color:@white;  font-weight:bold;}
+		   }
+		   	.da-dots{width: 100%; position: absolute; text-align: center; left: 0px; bottom:0px; z-index: 1000; -moz-user-select: none; -webkit-user-select: none;}
+            .da-dots span{ display: inline-block; position: relative; width: 30px; height: 8px; background: #fff; margin: 3px; cursor: pointer; box-shadow:  1px 1px 1px rgba(0,0,0,0.1) inset, 
+		1px 1px 1px rgba(255,255,255,0.1); border-radius:0px;}
+           .da-dots span.da-dots-current:after{ content: ''; width: 28px; height: 6px; position: absolute; background:@main-global; border-radius:0px; left:1px; top:1px;}
+}
+/*
+------------------------------------------------------------------------------
+CAMERA SLIDER
+-------------------------------------------------------------------------------
+*/
+/* Heading */
+div.slideshowck {margin:0px !important;
+         h1{color:@white; text-transform:uppercase; margin:0px; font-family:'open_sans_lightregular', Arial, Helvetica, sans-serif; margin:0px; padding:10px 0; line-height:1.7em;}
+	  }
+/* Caption */
+div.slideshowck {margin:0px !important;
+         h2{color:@white; text-transform:uppercase; margin:0px; font-family:'open_sans_lightregular', Arial, Helvetica, sans-serif; margin:0px; padding:0px;}
+		 .camera_caption > div{background:rgba(0, 0, 0, 0.5); border-top:2px solid @main-global; margin:0px 20px 40px 20px !important;}
+		 .camera_prev {left:20px; background:rgba(0, 0, 0, 0.5); -webkit-transition: background-color 0.4s; -moz-transition: background-color 0.4s; -o-transition: background-color 0.4s; -ms-transition: background-color 0.4s; transition: background-color 0.4s; height:60px;
+		 span{margin:10px 0 0 0;}
+		 &:hover {background:@main-global;}
+		 }
+		 .camera_next {right:20px; background:rgba(0, 0, 0, 0.5); -webkit-transition: background-color 0.4s; -moz-transition: background-color 0.4s; -o-transition: background-color 0.4s; -ms-transition: background-color 0.4s; transition: background-color 0.4s; height:60px;
+		 span{margin:10px 0 0 0;}
+		 &:hover {background:@main-global;}
+		 }
+         .camera_commands {display:none;}
+	  }
+/*Pagenav*/
+div.camera_wrap{
+       .camera_pag{position:absolute; bottom:5px; text-align:center; width:100%;
+	          .camera_pag_ul{margin:0 auto !important; width:102px;}
+			  .camera_pag_ul li > span{-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; height: 8px; left:0px; top:0px;
+overflow: hidden; position: absolute; width: 8px;}
+              .camera_pag_ul li {-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; width:30px;	height:10px; background:rgba(0, 0, 0, 0.5); margin:0 1px 0 0;}
+			  .camera_pag_ul li:hover > span {background:@main-global; -webkit-border-radius: 0px; -moz-border-radius: 0px;
+border-radius: 0px; width:30px; height:10px; -webkit-transition: background-color 2s; -moz-transition: background-color 2s; -o-transition: background-color 2s; -ms-transition: background-color 2s; transition: background-color 2s;}
+              .camera_pag_ul li.cameracurrent > span {background:@main-global; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; width:30px; height:10px ; -webkit-transition: background-color 2s; -moz-transition: background-color 2s; -o-transition: background-color 2s; -ms-transition: background-color 2s; transition: background-color 2s;
+	  } 
+   }
+}
+/*Camera Pie*/
+div.slideshowck{
+      .camera_pie canvas{top:17px !important; right:16px !important;}
+} 
+/*
+------------------------------------------------------------------------------
+NIVO SLIDER
+-------------------------------------------------------------------------------
+*/
+div.nivo-slider-wrapper{
+      .nivoSlider {box-shadow:0 0 5px rgba(0, 0, 0, 0.2);}
+      .nivo-controlNav{padding:15px 0 0 0;}
+}
+
+/*
+------------------------------------------------------------------------------
+SLICEBOX SLIDER
+-------------------------------------------------------------------------------
+*/
+div.sb-slider-wrapper{max-width:100% !important;  
+      ul.sb-slider{max-width:100% !important; z-index:2;
+	      li{
+		     img{width:100%;}		   
+		     div.sb-description {left:15px; bottom:15px; right:15px; padding:10px 15px; 
+		        h2{border:none; font-family:'open_sans_lightregular', Arial, Helvetica, sans-serif; font-size:2em;
+		          &::after{background:none;}
+		        }
+		      }
+		  }
+	  }
+	  .shadow { display:none;}	  
+	  .nav-dots{position:absolute; bottom:70px; z-index:3; 
+	    span{width:16px; height:16px;
+		&.nav-dot-current{background:@main-global;}}
+		}
+	  .nav-arrows a{top:49%; z-index:3; display:none;}
+	  &:hover{
+	  .nav-arrows a {display:block;}
+	  }
+	  .nav-arrows a, .nav-dots span, .nav-options span {background-color:@bodybackground9 !important;}
+}
+div.boxed{
+		div.sb-slider-wrapper{
+			  .shadow { width: 100%; height: 168px; position: relative; margin-top: -110px; background: transparent url(../images/shadow.png) no-repeat bottom center; background-size: 100% 100%; /* stretches it */	z-index: 1; display:compact !important;}
+			  .nav-dots{position:absolute; bottom:10px; z-index:3; 
+				span{width:16px; height:16px;
+				&.nav-dot-current{background:@main-global;}}
+				}
+			  .nav-arrows a{top:40%; z-index:3; display:none;}
+			  &:hover{
+			  .nav-arrows a {display:block;}
+			  }
+			  .nav-arrows a, .nav-dots span, .nav-options span {background-color:@bodybackground9 !important;}
+		}
+}
+
+/*
+------------------------------------------------------------------------------
+DJ IMAGE SLIDER
+-------------------------------------------------------------------------------
+*/
+div.djslider {
+         .navigation-container{top:47% !important;}
+		 .slide-desc-text { padding:15px 25px; }
+		 .slide-title { font-family:'open_sans_lightregular', Arial, Helvetica, sans-serif; font-size:2em; color:@white; line-height: 2em; margin:0px; padding:0px;}
+}

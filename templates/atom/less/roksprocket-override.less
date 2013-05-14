@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+------------------------------------------------------------------------------
+TABS
+-------------------------------------------------------------------------------
+*/
+/*Tab*/
+div.sprocket-tabs {
+              &.layout-top {
+			           .sprocket-tabs-nav {padding:0px !important; border-bottom:1px solid @bodyborder;}
+			 }
+              ul.sprocket-tabs-nav{background:none; border-left:1px solid @bodyborder;  
+			      li{font-weight:bold; border-right:1px solid @bodyborder; border-top:1px solid @bodyborder; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s;
+				      .sprocket-tabs-inner{border:0px; background:transparent;}
+					  &.active, &:hover{border-bottom:none; color:@main-global;}
+					  .sprocket-tabs-inner { border-radius:0px;  }
+					  }
+		      }
+			  .sprocket-tabs-panels {padding:15px; border:1px solid @bodyborder; border-top:none;}
+}
+/*List*/
+div.sprocket-lists {margin:0px;
+             li{margin:0 0 5px 0; padding-bottom:0px;}
+             h4.sprocket-lists-title{background:none; border-radius:0px; border:1px solid @bodyborder; font-size: 13px !important; padding:10px!important; display:block; margin:0 !important; font-weight:bold; color:@globalText;}
+			 li h4.sprocket-lists-title:hover{color:@main-global; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s;}			 
+             li.active h4.sprocket-lists-title{color:@main-global; background:none; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s;}
+			 //Pagination
+			 .sprocket-lists-pagination{
+			 li.active{background:@bodybackground8;}
+			 }
+            //Indicator
+            .sprocket-lists-title {
+                 .indicator{background:none;}
+                 .indicator:before{position: absolute; top: 50%;right: 0px;margin-top: -6px;display: block;width: 18px;height: 18px;cursor: pointer;text-align: center;font-size: 0.9em; content: "\f067"; font-family:'FontAwesome'; opacity:1;}
+}
+                .active .sprocket-lists-title {
+                       .indicator:before{content:"\f068"; border:none;}
+		               .indicator{background:none; opacity:1;}
+			}
+			//Arrows
+			.sprocket-lists-arrows{
+			.arrow{background:none; width:auto; height:auto; border-radius:0px;}
+			    .next span{top:0px !important; line-height:11px !important; }
+			}
+ }
+/*Mosaic*/
+div.sprocket-mosaic { text-align:center;
+	.sprocket-mosaic-container {
+		li {border-radius:0px;
+		}
+	}
+	.sprocket-mosaic-item {border-radius:0px; border-left:none; border-top:none; border-bottom:1px solid @bodyborder; border-right:none; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s;
+		&:hover {border-bottom:1px solid @main-global; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s; box-shadow:0 0 5px rgba(0, 0, 0, 0.3);}
+		.sprocket-mosaic-image-container img{-webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s;}
+		.sprocket-mosaic-image-container:hover img{-webkit-filter: none; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s;}
+		.sprocket-padding {
+			background-image: url(../images/main/separator-overlay.png);
+		}
+		.sprocket-mosaic-title{border-bottom:1px solid @main-global; margin:10px 0; padding:0 10px; display:inline-block;
+			a { color: @globalText; 
+			&:hover{color: @main-global; text-decoration:none;}
+			}
+			&:after{background:none;}
+		}
+		.sprocket-mosaic-text{margin:0 10px 10px 10px;}
+		.sprocket-mosaic-tags{margin:0 0 10px 0; background:@bodybackground;
+		 li { background:none; font-family:Georgia, 'Times New Roman', Times, serif; padding:0px 2px; font-size:11px; 
+		     &:after{content:","}
+		    }
+		 }
+		.sprocket-mosaic-hovercontent { -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s;
+		    border:5px solid @main-global; background:rgba(0, 0, 0, 0.5); display:block; height:auto; width:auto; left:0px; top:0px; color: @black;
+			.more-icon{right:10px; top:10px; position:absolute; color:@white; font-size:50px; background:@main-global; width:40px; height:40px; text-align:center; vertical-align:middle; font-weight:normal; font-family:'open_sans_lightregular', Arial, Helvetica, sans-serif; font-size:32px;  line-height:40px;}
+			}
+	}
+	.sprocket-mosaic-filter, .sprocket-mosaic-order {font-size:11px; font-weight:bold;
+	     li{border-radius:0px; text-transform:capitalize;padding:2px 10px; border:none; background:@bodybackground; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s;
+		    &:hover, &.active {background:@main-global; color: @white; border-bottom:1px solid @main-global; -webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s;}
+		}
+	}
+	.sprocket-mosaic-loadmore{-webkit-transition: all 0.3s ease-in-out 0s; -moz-transition: all 0.3s ease-in-out 0s; -o-transition: all 0.3s ease-in-out 0s; -ms-transition: all 0.3s ease-in-out 0s; color: @white;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+	border: 1px solid darken(@main-global, 5%);
+	position: relative;
+	text-shadow: none;
+	#gradient > .vertical-three-colors(lighten(@main-global,5%), @main-global, 45%, @main-global);
+	&:hover { 
+		color: @white;
+		border: 1px solid darken(@btnHover,5%);
+		#gradient > .vertical-three-colors(lighten(@btnHover,5%), @btnHover, 45%, @btnHover);
+	}
+	}
+}

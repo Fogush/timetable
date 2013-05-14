@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+    <name>testmodule</name>
+    <author>me</author>
+    <version>1.0</version>
+    <description>TEST example by joomla-book.ru</description>
+    <files>
+        <filename module="mod_testmodule">mod_testmodule.php</filename>
+    </files>
+</install>s

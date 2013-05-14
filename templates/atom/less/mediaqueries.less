@@ -1,0 +1,242 @@
+/**
+* @version   $Id$
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - ${copyright_year} RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+// Desktop Modes
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	.promo {
+		h1 {font-size: 3.7em;}
+		p {font-size: 1.3em;}
+	}
+	.promo-image {width: 40%;}
+	.promo-image img {max-width: 100%;}
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+	.visible-tablet {display: inherit !important;}
+	.hidden-tablet {display: none !important;}
+	.hidden-desktop {display: inherit !important;}
+	.visible-desktop {display: none !important;}
+	
+    //Date Block
+	.date-block {text-align:center;}
+	
+	// Promo Showcase
+	.promo-image {width: 38%;}
+	.promo-image img {max-width: 100%;}
+	.promo {
+		h1 {font-size: 2.9em;}
+		p {font-size: 1.1em;}
+	}
+	.promo-desc {padding-top: 0;}
+}
+
+@media only screen and (min-width: 768px) {
+	.rt-menu-mobile {display: none;}
+
+}
+
+// Mobile Modes
+@media (max-width: 767px) {
+	.visible-phone {display: inherit !important;}
+	.hidden-phone {display: none !important;}
+	.hidden-desktop {display: inherit !important;}
+	.visible-desktop {display: none !important;}
+	
+	// Logo
+	#rt-logo {margin: 0 auto;}
+	
+	// Menu
+	.menu-block {display: none;}
+	.rt-menu-mobile {padding:15px 0;}
+	
+	// Search
+	.search {display: none;}
+	
+	// Top
+	#rt-top .custom p{ text-align: center;}
+	
+	// Social Media
+	.rp-social-media {display: none;}
+	
+	// Page Heading
+	#rt-showcase{	    
+		.bannergroup {text-align:center;
+                        h1.page-heading{font-size:1.75em;}
+		       .page-sub-heading{display:none;}
+                  }
+
+	}
+	
+	// Slideshow - P-Parallex Slider
+	div#da-slider {height:375px;
+	    .da-slide{
+	     h2{font-size:30px;}
+	     }
+	}
+	
+	// Slideshow - DJ Image Slider
+	div.djslider {
+		 .slide-text { display: none; }
+		 .slide-title { font-size:1.75em; line-height: 1.75em;}
+    }
+	
+	// Joomla Core
+	body .component-content {
+		.column-1, .column-2, .column-3 {width: 100% !important;float: none !important;margin: 0 !important;}
+	}
+	
+	// Features
+	#gantry-totop {margin: 0 auto;text-align: center;width: 100%;}
+	
+	// Copyright
+	#rt-copyright{text-align:center;}
+	#rt-copyright ul.menu li{float:none; display:inline-block;}
+	
+	// Extras
+	.gantry-width-20, .gantry-width-25, .gantry-width-30, .gantry-width-33, .gantry-width-40, .gantry-width-50, .gantry-width-60, .gantry-width-66, .gantry-width-70, .gantry-width-75, .gantry-width-80 {width: 100%;}
+	.gantry-width-spacer {margin: 5px;}
+	.row {
+		margin: 0;
+		display: block;
+		.cell {
+			display: block;
+			width: 100%;
+		}
+	}
+	.form-horizontal {
+		.control-group {
+			.control-label {
+				float:none;
+				width: auto;
+				text-align:left;
+			}
+			.controls {
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+// Promo Showcase
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.promo-image {width: 48%;margin-top: 0;margin-bottom: 0;}
+	.promo-image img {max-width: 100%;}
+	.promo {
+		h1 {font-size: 2.2em;}
+		p {font-size: 1em;}
+	}
+	.promo-desc {padding-top: 0;}
+	
+	//Date Block
+	.date-block {text-align:center;}
+	
+	// Page Heading
+	#rt-showcase{	    
+		.bannergroup { text-align:center;
+                         h1.page-heading { font-size:1.5em; } 
+			.page-sub-heading { display:none; }
+		}		
+	}
+	
+	// Slideshow - P-Parallex
+	div#da-slider{
+       .da-slide{
+	        h2{font-size:1.5em; }
+			p{font-weighn:normal; margin:0 2%; width:96%;}
+			.da-img{margin:0;}
+		   }
+     }
+	 
+	 // Slideshow - DJ Image Slider
+	div.djslider {
+		 .slide-text { display: none; }
+		 .slide-title { font-size:1.5em; line-height: 1.5em;}
+    }
+	 
+	 // Slideshow - CameraSlider	
+	div.camera_wrap{
+	    h1{font-size:1.8em; line-height:1.5em;}
+            .camera_target_content{display:none;}
+	}
+	
+	// Slideshow - Slicebox
+	div.sb-slider-wrapper{
+      ul.sb-slider, ul#sb-slider257{
+	      li{   
+		     div.sb-description {display:none;}
+		  }
+	   }
+	   .nav-arrows a{top:43%; z-index:3; display:none;}
+     }
+	 
+	 div.boxed{
+		 div.sb-slider-wrapper{
+		   .nav-arrows a{top:35%; z-index:3; display:none;}
+         }
+	 }
+}
+
+@media only screen and (max-width: 480px) {
+	.promo-image {margin: 0 auto;width: 100%;float: none;text-align: center;}
+	.promo-image img {max-width: 50%;}
+	.promo {
+		h1 {font-size: 2.2em;}
+		p {font-size: 0.9em;}
+	}
+	.promo-desc {padding-top: 0;}
+	
+	// Menu
+	.rt-menu-mobile {padding:15px 0;}
+	
+	//Date Block
+	.date-block {text-align:center;}
+	
+	// Slideshow - P-Parallex
+	div#da-slider{height:340px;
+       .da-slide{
+	        h2{font-size:1.2em; }
+			p{font-weighn:normal; margin:0 2%; width:96%;}
+			.da-img{margin:30px 0 0 0;}
+		   }
+    }
+	 
+	// Slideshow - CameraSlider	
+	div.camera_wrap{
+	    h1{font-size:1.5em; line-height:1.2em;}
+            .camera_target_content{display:none;}
+	}
+	
+	// Slideshow - DJ Image Slider
+	div.djslider {
+		 .slide-text { display: none !important; }
+		 .slide-title { font-size:1.2em; line-height: 1.2em;}
+    }	
+	
+	// Slideshow - Slicebox
+	div.sb-slider-wrapper{
+      ul.sb-slider{
+	      li{   
+		     div.sb-description {display:none; }
+		  }
+	   }
+	   .nav-arrows a{top:43%; z-index:3; display:none;}
+     }
+	 
+	 div.boxed{
+		 div.sb-slider-wrapper{
+		   .nav-arrows a{top:35%; z-index:3; display:none;}
+         }
+	}
+	
+	// Page Heading
+	#rt-showcase{	    
+		.bannergroup { text-align:center;
+		    h1.page-heading { font-size:1.5em; }
+			.page-sub-heading { display:none; }
+		}		
+	}
+}

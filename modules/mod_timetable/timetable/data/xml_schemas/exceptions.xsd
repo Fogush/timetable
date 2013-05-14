@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="timetableExceptions">
+	<xsd:complexType>
+	
+		<xsd:sequence>
+			<xsd:element name="exception" maxOccurs="unbounded">
+				<xsd:complexType>
+					<xsd:all>
+						<xsd:element name="subject" type="xsd:string" minOccurs="0" />
+						<xsd:element name="type" type="xsd:string" minOccurs="0" />
+						<xsd:element name="classroom" type="xsd:string" minOccurs="0" />
+						<xsd:element name="subgroup" type="xsd:positiveInteger" minOccurs="0" />
+						<xsd:element name="comment" type="xsd:string" minOccurs="0" />
+					</xsd:all>
+				
+					<xsd:attribute name="date" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="\d\d.\d\d.\d\d\d\d" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+					
+					<xsd:attribute name="beginTime" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base="xsd:string">
+								<xsd:pattern value="\d\d?:\d\d" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+					
+					<xsd:attribute name="withoutLesson" type="xsd:boolean" use="optional" />
+				</xsd:complexType>
+			</xsd:element>	
+			
+		</xsd:sequence>
+		
+	</xsd:complexType>
+</xsd:element>
+
+<xsd:group name="lesson">
+</xsd:group>
+
+</xsd:schema>

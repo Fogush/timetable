@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>mod_pParallax</name>
+	<author>Revival Pixel</author>
+	<authorEmail>revivalpixel@gmail.com</authorEmail>
+	<authorUrl>http://www.revivalpixel.com</authorUrl>
+	<copyright>Copyright (c) 2012 RevivalPixel. All rights reserved.</copyright>
+	<creationDate>June 12th, 2011</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Revival Pixel Paralell Slider</description>
+	
+	<files>
+		<filename module="mod_pParallax">mod_pParallax.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	
+	<config>
+	<fields name="params">
+			<fieldset name="basic">
+				<field name="height" type="text" default="500" label="Slider height" description="" />
+				<field name="number" type="list" default="3" label="Number of slides" description="">
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</field>
+				<field name="imgpath" type="text" default="modules/mod_pParallax/assets/images/" label="Images path" description="" />
+				<field name="back1" type="text" default="" label="Background image" description="" />
+				<field name="autoplay" type="radio" default="1" label="Autoplay" description="Slider Autoplay">
+    				<option value="0">JNO</option>
+   					 <option value="1">JYES</option>
+				</field>	
+				<field name="readmore" type="text" default="" label="read more text" description="" />	
+
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+		 </fieldset>
+            <fieldset name="imagesetting" label="Image Setting" addfieldpath="/modules/mod_pParallax/elements">
+                	<field name="slide1" type="rplabel" label="Slider 1 Setting" style="title"/>
+						
+					<field name="image1" type="text" default="1.png" label="Image" description="" />
+					<field name="title1" type="text" default="" label="Title" description="" />
+					<field name="text1" type="textarea" filter="safehtml" rows="3" cols="40" label="Description" description="" />
+					<field name="link1" type="text" default="" label="Read more link" description="" />	
+					
+						
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+					<field name="slide2" type="rplabel" label="Slider 2 Setting" style="title"/>
+					
+					<field name="image2" type="text" default="" label="Image" description="" />
+					<field name="title2" type="text" default="" label="Title" description="" />
+					<field name="text2" type="textarea" filter="safehtml" rows="3" cols="40" label="Description" description="" />
+					<field name="link2" type="text" default="" label="Read more link" description="" />				
+					
+										
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+					<field name="slide3" type="rplabel" label="Slider 3 Setting" style="title"/>
+					
+					<field name="image3" type="text" default="" label="Image" description="" />
+					<field name="title3" type="text" default="" label="Title" description="" />
+					<field name="text3" type="textarea" filter="safehtml" rows="3" cols="40" label="Description" description="" />
+					<field name="link3" type="text" default="" label="Read more link" description="" />				
+					
+						
+									
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				
+					<field name="slide4" type="rplabel" label="Slider 4 Setting" style="title"/>
+					
+					<field name="image4" type="text" default="" label="Image" description="" />	
+					<field name="title4" type="text" default="" label="Title" description="" />
+					<field name="text4" type="textarea" filter="safehtml" rows="3" cols="40" label="Description" description="" />
+					<field name="link4" type="text" default="" label="Read more link" description="" />				
+			
+					
+										
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="slide5" type="rplabel" label="Slider 5 Setting" style="title"/>
+				
+					<field name="image5" type="text" default="" label="Image" description="" />
+					<field name="title5" type="text" default="" label="Title" description="" />
+					<field name="text5" type="textarea" filter="safehtml" rows="3" cols="40" label="Description" description="" />
+					<field name="link5" type="text" default="" label="Read more link" description="" />				
+				
+						
+										
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="slide6" type="rplabel" label="Slider 6 Setting" style="title"/>
+					<field name="image6" type="text" default="" label="Image" description="" />	
+					<field name="title6" type="text" default="" label="Title" description="" />
+					<field name="text6" type="textarea" filter="safehtml" rows="3" cols="40" label="Description" description="" />
+					<field name="link6" type="text" default="" label="Read more link" description="" />				
+				
+				
+										
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="slide7" type="rplabel" label="Slider 7 Setting" style="title"/>
+					<field name="image7" type="text" default="" label="Image" description="" />	
+					<field name="title7" type="text" default="" label="Title" description="" />
+					<field name="text7" type="textarea" filter="safehtml" rows="3" cols="40" label="Description" description="" />
+					<field name="link7" type="text" default="" label="Read more link" description="" />				
+					
+					
+										
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="slide8" type="rplabel" label="Slider 8 Setting" style="title"/>
+					<field name="image8" type="text" default="" label="Image" description="" />
+					<field name="title8" type="text" default="" label="Title" description="" />
+					<field name="text8" type="textarea" filter="safehtml" rows="3" cols="40" label="Description" description="" />
+					<field name="link8" type="text" default="" label="Read more link" description="" />				
+					
+						
+										
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="slide9" type="rplabel" label="Slider 9 Setting" style="title"/>
+					<field name="image9" type="text" default="" label="Image" description="" />		
+					<field name="title9" type="text" default="" label="Title" description="" />
+					<field name="text9" type="textarea" filter="safehtml" rows="3" cols="40" label="Description" description="" />
+					<field name="link9" type="text" default="" label="Read more link" description="" />				
+					
+						
+										
+				
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="slide10" type="rplabel" label="Slider 10 Setting" style="title"/>
+					<field name="image10" type="text" default="" label="Image" description="" />
+					<field name="title10" type="text" default="" label="Title" description="" />
+					<field name="text01" type="textarea" filter="safehtml" rows="3" cols="40" label="Description" description="" />
+					<field name="link10" type="text" default="" label="Read more link" description="" />				
+				
+						
+									
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="itemid">
+					<option
+						value="itemid"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

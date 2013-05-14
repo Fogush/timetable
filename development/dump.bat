@@ -1,0 +1,1 @@
+mysqldump -uroot -p123321 joomla > d:\Other\Dropbox\aser\development\joomla.sql 

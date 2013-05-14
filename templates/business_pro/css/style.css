@@ -1,0 +1,104 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/*
+ * Style Style Sheet - Defines the main look like colors and backgrounds
+ * Not all style related CSS is included, only colors and backgrounds which may change for different theme styles
+ */
+
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+/*  
+blockquotes  
+ */ 
+ 
+blockquote {
+background-image: url(../images/quote.jpg);
+padding: 20px 10px;
+  font: 15px normal helvetica, sans-serif;
+  font-style:italic;
+  color: #383838;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-left: 15px;
+  border-left: 8px solid #383838;
+} 
+ 
+blockquote:hover {
+background-image: url(../images/quote.jpg);
+padding: 20px 10px;
+  font: 15px normal helvetica, sans-serif;
+  font-style:italic;
+  color: #383838;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-left: 15px;
+  border-left: 8px solid #279fea;
+}
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+
+/* Custom Stuff
+----------------------------------------------------------------------------------------------------*/
+
+/* Mosaic - Content */
+.sprocket-mosaic-container {margin: 0;padding: 0;list-style: none;}
+.sprocket-mosaic-container li {display: inline-block; }
+.sprocket-readmore {display:none; }
+.sprocket-readmore:hover {opacity: 1;background-position: 0 -99px;}
+
+/* Mosaic - Item */
+.sprocket-mosaic-item {
+	border: 1px solid #dddddd;
+        border-radius: 0;
+        color: #383838;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	background: #fff;
+}
+
+.sprocket-mosaic-item:hover {
+        border-radius: 0;
+        color: #383838;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+        background-image: url(../images/quote.jpg);
+}
+
+.sprocket-mosaic .sprocket-mosaic-tags, #main .sprocket-mosaic ul.sprocket-mosaic-tags {margin: 10px -10px -10px; padding: 5px;background: none;border-radius: 0;font-size: 90%;font-weight: bold;}
+/*.sprocket-mosaic .sprocket-mosaic-tags li, #main .sprocket-mosaic ul.sprocket-mosaic-tags li {width: auto;margin-right: 1px;padding: 0 5px;background: #fff;border: 1px solid #ddd;border-radius: 0}*/
+.sprocket-mosaic .sprocket-mosaic-tags li, #main .sprocket-mosaic ul.sprocket-mosaic-tags li {width: auto;margin-right: 1px;padding: 0 5px;background: none;border-radius: 0;border: 1px solid #ddd;}
+
+
+.sprocket-mosaic .sprocket-mosaic-order li {float: right; margin-left: 5px; margin-bottom: 5px; color: #ffffff; border: none; border-radius: 0; background: #424446;}
+
+.sprocket-mosaic .sprocket-mosaic-filter li {float: left; margin-right: 5px; margin-bottom: 5px; color: #ffffff; border: none; border-radius: 0; background: #424446;}
+
+.sprocket-mosaic-hovercontent { width: 100%; height: 100%; background: rgba(66,68,70,0.8) url(../images/eye.png) 50% 50% no-repeat; }
+
+.sprocket-mosaic-container li:hover {
+         box-shadow: 0 0 5px #888888;
+    }
+
+.active .sprocket-lists-title {color: #fff;background: #424446;}
+.sprocket-lists-title:hover {color: #fff;background: #424446;}
+.sprocket-lists-item {background-image: url(../images/quote.jpg);}

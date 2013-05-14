@@ -1,0 +1,95 @@
+/* @override
+	http://localhost:8888/dev/intrepid/modules/mod_jTweet/css/jTweet.css
+	http://localhost:8888/25/avanti/modules/mod_jTweet/css/jTweet.css
+*/
+
+/**
+ * @package		jTweet
+ * @subpackage	jTweet
+ * @author		Joomla Bamboo - design@joomlabamboo.com
+ * @copyright 	Copyright (c) 2012 Joomla Bamboo. All rights reserved.
+ * @license		GNU General Public License version 2 or later
+ * @version		2.0.5
+ */
+ul.tweet_list {margin: 0;float: left;width: 100%;}
+ul.tweet_list li {
+list-style-type: none;
+margin: 0;
+padding: 10px 0;
+float: left;width: 100%;
+}
+
+
+.tweet_avatar{margin-right: 4%;background: #fff;border: 1px solid #ddd;padding: 2px;display: inline-block;margin-bottom: 8px;float: left;}
+
+#twittericon {
+float: left;
+}
+ul.tweet_list span {
+margin: 0 4px;
+}
+
+ul.tweet_list span.tweet_time {
+margin-left: 4px;
+}
+
+.jTweet {
+float: left;width: 100%;overflow: hidden;
+}
+
+
+
+.tweetcol2,.tweetcol1,.tweetcol3 {
+float: left;margin-right: 3.8%;
+}
+
+ul.tweet_list span.at {
+margin: 0;
+}
+
+
+
+#twittericon {
+display: block;width: 100px;height: 100px;
+}
+
+/*
+	 Speech Bubbles
+	 Usage: Apply a class of .tweet_text and .tweet_text-DIRECTION
+	 <div class="speech-bubble speech-bubble-top">Hi there</div>
+*/
+.jTweet.bubble li {
+margin-bottom: 20px;
+}
+.jTweet.bubble .tweet_text {
+	position: relative;
+	background-color: #eee;
+float: left;
+	width: 90%;
+	padding: 4%;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 20px !important;
+}
+
+.jTweet.bubble .tweet_text:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid #fff;
+}
+
+/* Position the Arrow */
+.jTweet.bubble .tweet_text:after {
+	border-top-color: #eee;
+	top: 100%;
+	left: 50%;
+	margin-left: -15px;
+}
+
+
+.jTweet.shadow li {
+background-color:#fff;-moz-box-shadow:inset 0 3px 7px rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.05);-webkit-box-shadow: 0 3px 7px rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.05);box-shadow: 0 3px 7px rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.05);margin-bottom: 30px;padding: 20px 4%;width: 90%
+}
+

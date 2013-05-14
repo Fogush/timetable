@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5">
+  <name>pageheading</name>
+  <creationDate>08-Dec-2012</creationDate>
+  <author>RevivalPixel</author>
+  <authorEmail>revivalpixel@gmail.com</authorEmail>
+  <authorUrl>www.revivalpixel.com</authorUrl>
+  <copyright>Copyright (C) 2012. All rights reserved.</copyright>
+  <license>GNU General Public</license>
+  <version>1.0</version>
+  <description>This module adds the page title.</description>
+  <files folder="site">
+    <filename module="mod_pageheading">mod_pageheading.php</filename>
+  </files>
+ <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="title" default="" type="text" size="40" label="Page Title" description="The title of the page." />
+				<field name="subtitle" default="" type="text" size="40" label="Page SubTitle" description="The subtitle of the page." />
+		    </fieldset>
+			<fieldset name="advanced">
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
