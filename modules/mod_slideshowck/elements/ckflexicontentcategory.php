@@ -38,7 +38,7 @@ class JFormFieldCkflexicontentcategory extends JFormFieldCklist {
                     // add the category tree to categories cache
                     $catscache = JFactory::getCache('com_flexicontent_cats');
                     $catscache->setCaching(1);   //force cache
-                    $catscache->setLifeTime(84600); //set expiry to one day
+                    $catscache->setLifeTime(86400); //set expiry to one day
                     $globalcats = $catscache->call(array('plgSystemFlexisystem', 'getCategoriesTree'));
                 } else {
                     $globalcats = plgSystemFlexisystem::getCategoriesTree();
